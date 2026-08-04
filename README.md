@@ -64,17 +64,18 @@ two codebases would be two places for the same bug to live — a fix to the
 commit-reveal chain or the belief update would have to be made twice and would
 eventually be made once.
 
-The engine here is symmetric by construction: both brains are implemented, both
+The engine is symmetric by construction: both brains are implemented here, both
 sets of configuration ship, and either side can be selected at run time with
-`--role`. What this repository changes is a single line:
+`--role`. This repository differs from
+[`best2934-cop`](https://github.com/Krayz1a/best2934-cop) in a single line:
 
 ```python
 # src/p2pchase/constants.py
 DEFAULT_ROLE: Final[str] = ROLE_THIEF     # ROLE_COP in best2934-cop
 ```
 
-Everything else that differs is this README and the tuning in
-`config/thief/setup.json`, which is where a thief's judgement actually lives.
+plus this README and the tuning in `config/thief/setup.json`, which is where a
+thief's judgement actually lives.
 `tests/unit/test_shared/test_config.py::test_the_shipped_role_is_a_single_constant`
 pins the constant to a real role and checks that an argument-free load selects
 it, so the two repositories cannot silently drift into playing the same side.
