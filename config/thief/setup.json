@@ -4,7 +4,11 @@
   "game": {
     "group_id": "best2934",
     "group_name": "best2934",
-    "members": ["Tomer Levy", "Eyal Koloshi", "Alon Issman"],
+    "members": [
+      "Tomer Levy",
+      "Eyal Koloshi",
+      "Alon Issman"
+    ],
     "repos": {
       "cop": "https://github.com/Krayz1a/best2934-cop",
       "thief": "https://github.com/Krayz1a/best2934-thief"
@@ -12,8 +16,8 @@
   },
   "network": {
     "my_port": 8802,
-    "public_url": "",
-    "opponent_url": "http://127.0.0.1:8801/mcp",
+    "public_url": "https://monogram-radio-blooper.ngrok-free.dev/mcp",
+    "opponent_url": "https://091d-81-199-248-18.ngrok-free.app/mcp",
     "turn_timeout_seconds": 30
   },
   "strategy": {
