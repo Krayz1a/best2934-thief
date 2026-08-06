@@ -301,6 +301,14 @@ match without either side noticing, so the kernel and decay rate are hashed into
 a `scent_fingerprint` and compared during the handshake. A mismatch stops the
 match before move one.
 
+### The tied-series scoring choice
+
+The book and the reference implementation contradict each other on what a level
+series scores, and the course grants academic freedom to implement either
+**provided the choice is documented and justified**. This is that justification.
+
+| | A level 25–25 series scores |
+|
 ---
 
 ## 5. The model: a Dec-POMDP
