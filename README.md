@@ -234,6 +234,51 @@ is not an endpoint. Both halves are started in their own session so that closing
 the terminal does not take the match down with it; we lost nine hours to exactly
 that, and rule 6 charges *both* teams for a sub-game that never starts.
 
+**Both roles, one address, no changeover.** Rule 41 puts each role in its own
+repository, so a league series needs two peers reachable. We used to point one
+tunnel at whichever role the current half needed and move it at half time. That
+is wrong, and an opponent told us why: a tunnel that follows the role is torn
+down once per swap and drops the endpoint exactly where the next handshake
+lands. Under the odd/even convention the role flips every sub-game, so it would
+happen five times a series.
+
+[`tools/frontdoor.py`](tools/frontdoor.py) removes the swap. Both peers run
+permanently and one path-routing proxy fronts them:
+
+```
+https://<domain>/cop/mcp     -> 127.0.0.1:8801   best2934-cop
+https://<domain>/thief/mcp   -> 127.0.0.1:8802   best2934-thief
+https://<domain>/health      -> which roles are actually answering
+```
+
+Streaming is forwarded rather than buffered — MCP's transport is
+streamable-HTTP, and a proxy that collects the whole response first turns every
+server-sent event into a message that arrives after the turn it belonged to.
+
+Every outbound call carries `ngrok-skip-browser-warning`. ngrok's free tier
+answers a bare request with an HTML interstitial and status **200**, which is
+worse than an error: a dead peer and a live one both read as "200, fine", and
+the transport's own 406 can never be seen. It is served on User-Agent, so our
+client was already getting through — but that is a property of a dependency's
+default header rather than a decision we made.
+
+### The role convention is per pairing, not per league
+
+The rulebook never assigns roles across a series, so teams converged on two
+different order-independent rules — cop for the **first half** (1,2,3), or cop
+on the **odd** sub-games (1,3,5). Both give each team three of each role.
+
+They disagree at sub-games **2 and 5** only. That is the dangerous part: they
+agree on four of six, *including sub-game 1*, so a mismatched pairing plays
+cleanly twice and then produces two cops. `roles.convention_divergence` computes
+the set rather than trusting anyone's arithmetic — including ours, which was
+wrong once and was corrected by an opponent reading our own published lists.
+
+So the convention travels with the opponent in `setup.json`, exactly like the
+scent model: `first_half` with gal-roy1, `odd_even` with imreeyal, from one
+process. An unknown convention raises instead of falling back, because a silent
+fallback is how two peers end up internally consistent and mutually unplayable.
+
 ### Report the result
 
 ```bash
@@ -298,8 +343,41 @@ diagonal, where the closed form gives 0.43 against the figure's 0.42.
 
 That one cell is exactly the kind of silent disagreement that would corrupt a
 match without either side noticing, so the kernel and decay rate are hashed into
-a `scent_fingerprint` and compared during the handshake. A mismatch stops the
-match before move one.
+a `scent_fingerprint` and compared during the handshake.
+
+### Two scent models, locked per pairing
+
+The book is not the only reading in the league. Its ch4 prose gives
+*multiplicative* decay over the printed figure-4 kernel; the course's reference
+implementation gives *subtractive* decay over a linear Chebyshev falloff. Both
+are legal — Appendix F fixes the three numbers, not the shape of the update —
+and they produce visibly different trails.
+
+So both are implemented as **named registrations** in
+[`domain/scent_models.py`](src/p2pchase/domain/scent_models.py), chosen per
+opponent in `setup.json` rather than globally:
+
+| | Physics | Played against |
+|---|---|---|
+| `multiplicative_book_v1` | `τ' = clamp((1−ρ)·τ + Δτ, 0, 0.9)`, figure-4 lookup, additive deposit | gal-roy1, and anyone who declares nothing |
+| `subtractive_chebyshev_v1` | `τ' = round(max(0, τ − 0.1), 3)`, linear Chebyshev falloff, deposit merged by max | imreeyal |
+
+A peer publishes a four-key document describing its choice, hashes it, and
+declares **only the hash** as `scent_model_sha256`. The schema matters as much
+as the hash: a bare digest over an ad-hoc dict means two teams implementing the
+same model from the same page serialise different field sets and refuse each
+other for no reason at all.
+
+Ours reproduce the league's published digests — `81ebee59…` and `934c220d…` —
+and the worked examples inside them are **derived from our own arithmetic rather
+than transcribed**, which is what makes the digest a test of the physics instead
+of a test of our typing.
+
+**Refusal fires only when both peers declare and disagree.** Omission is never
+refusal, in either direction. That rule now governs `scent_fingerprint` too,
+which is our own construction and unknown outside our pairing with gal-roy1 —
+comparing it strictly meant refusing, at the handshake, every team who had
+simply never heard of it.
 
 ### The tied-series scoring choice
 
@@ -308,7 +386,38 @@ series scores, and the course grants academic freedom to implement either
 **provided the choice is documented and justified**. This is that justification.
 
 | | A level 25–25 series scores |
-|
+|---|---|
+| Book ch9, as we first read it | **2 / 2** — the tie score *replaces* the sums |
+| Reference implementation | **27 / 27** — the tie score is *added* to them |
+
+**We add.** `SeriesTally.finalise` and `reports/agreed.series_totals` both apply
+`tie_score` on top of the accumulated points, and `raw_score` / `scores` keep the
+untouched sums beside the adjusted total so the adjustment is always visible
+rather than baked in.
+
+We changed to this from the replacing reading, and not because the book argument
+is weak. Three reasons, in the order that decided it:
+
+1. **Rule 35 charges both teams.** Contradictory reports void the match and
+   score *both* sides zero. A reading we hold alone is not a private act of
+   principle — it costs the opponent their points too. Being solo-correct is
+   worse for the league than being conventionally wrong.
+2. **Every other implementation we can check sums.** The reference does; so does
+   the `copthief-league-protocol` kit, whose published fixtures we verified
+   against our own encoder before adopting.
+3. **Replacing inverts the ordering.** Under it a hard-fought 25–25 series pays
+   2, while a single sub-game win pays 20 — so a team would rank *higher* for
+   one narrow victory than for six drawn ones. That is difficult to defend as
+   the intent of a rule whose stated purpose is that no encounter goes unscored.
+
+The cost is recorded rather than hidden: our settlement digest for a tied series
+no longer matches the value gal-roy1 and we originally agreed
+(`f57c1b85…` → `bc737517…`). Every non-tied vector still reproduces exactly, so
+the divergence is confined to a level series — but a bilateral agreement changed
+unilaterally is worth nothing, and it is theirs to recompute or object to before
+any counted series. Both digests are pinned in
+`tests/unit/test_reports/test_agreed.py` so neither can quietly disappear.
+
 ---
 
 ## 5. The model: a Dec-POMDP

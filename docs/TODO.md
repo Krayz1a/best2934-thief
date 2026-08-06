@@ -1,6 +1,6 @@
 # TODO — Tasks, phases and definitions of done
 
-**Project** `best2934-cop` · **Document version** 1.00
+**Project** `best2934-thief` (same engine as `best2934-cop`) · **Document version** 1.00
 **Last updated** 2026-08-06 · **Deadline** 2026-08-12 23:59 (no extensions)
 
 Status values: **Done** · **In progress** · **Not started** · **Blocked**
