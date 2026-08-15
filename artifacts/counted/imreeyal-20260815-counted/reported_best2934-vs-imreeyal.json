@@ -1,0 +1,11 @@
+{
+  "_schema": "Receipt for the automatic counted-series report (rule 32). Its presence prevents a second send.",
+  "game_id": "best2934-vs-imreeyal",
+  "opponent": "imreeyal",
+  "sent": false,
+  "recipient": "rmisegal+uoh26finalgame@gmail.com",
+  "subject": "Police-Thief series result: winner tie (reported by thief)",
+  "attachment": "result_best2934-vs-imreeyal.json",
+  "message_id": "",
+  "reason": "ModuleNotFoundError: No module named 'googleapiclient'"
+}
