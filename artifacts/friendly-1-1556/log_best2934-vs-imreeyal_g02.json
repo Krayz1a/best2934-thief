@@ -1,0 +1,608 @@
+{
+  "_schema": "Per-sub-game match log consumed by the Replay Viewer for cryptographic verification: commit/reveal records, moves, hints, nonces and hashes.",
+  "schema_version": "1.2",
+  "game_id": "best2934-vs-imreeyal",
+  "game_uid": "0d98626a-7369-b854-e473-3df1898d45f1",
+  "links": {
+    "_remark": "Logical roles, NOT fixed filenames. Match-level files (declaration, result) are named <role>_<game_id>.json; per-sub-game files (config, log) are named <role>_<game_id>_g<NN>.json.",
+    "declaration": "declaration_best2934-vs-imreeyal.json",
+    "config": "config_best2934-vs-imreeyal_g<NN>.json",
+    "log": "log_best2934-vs-imreeyal_g<NN>.json",
+    "result": "result_best2934-vs-imreeyal.json"
+  },
+  "summary": {
+    "sub_game_number": 2,
+    "group_id": "best2934",
+    "role": "thief",
+    "opponent_group_id": "imreeyal",
+    "result": "survival",
+    "winner_role": "thief",
+    "steps": 35,
+    "timezone": "Asia/Jerusalem",
+    "started_at": "2026-08-14T12:21:55.199127+00:00",
+    "ended_at": "2026-08-14T12:22:20.709244+00:00",
+    "duration_seconds": 25.5,
+    "tokens_total": 0,
+    "audit": {
+      "passed": true,
+      "verified_steps": 36,
+      "failed_steps": [],
+      "forged_steps": [],
+      "withheld_steps": [],
+      "unsolicited_steps": []
+    }
+  },
+  "records": [
+    {
+      "payload": {
+        "step": 0,
+        "type": "system_spec",
+        "spec": {
+          "os": "Linux 7.0.0-29-generic",
+          "cpu_type": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+          "cpu_cores": 8,
+          "cpu_freq_mhz": 4200,
+          "ram_gb": 7.0,
+          "gpu_type": "none (CPU only)",
+          "gpu_cores_or_cuda": "n/a",
+          "vram_gb": 0.0
+        },
+        "model": "claude-haiku-4-5",
+        "code_version": "1.0.0",
+        "group_name": "best2934",
+        "group_id": "best2934",
+        "role": "thief",
+        "sub_game_number": 2,
+        "github_commit": "593bde06211611a6f912b47af017ff610f569cf4",
+        "signature": "c45db06e78e81530d964ea68599b1e55abc4a283fdd7b5a1a1ac38921cffab86"
+      },
+      "nonce": "2f20fba800d29142f8f5a36af134d1f0",
+      "commit": "49cc739f7caa48e58708e17edae82b5aff1e7f2a5bbad9f976e751afb2a7d946"
+    },
+    {
+      "payload": {
+        "step": 1,
+        "role": "THIEF",
+        "state": [
+          4,
+          3
+        ],
+        "move": "MOVE:S",
+        "intent": "truth",
+        "hint": "Chinatown is behind me now, going south."
+      },
+      "nonce": "f0eba95dcc1369d726c2d26f268e02e8",
+      "commit": "8084d782bfeb2f1bd77e21652dada0ace8af5b35234daade173663fe6a75b38f"
+    },
+    {
+      "payload": {
+        "step": 2,
+        "role": "THIEF",
+        "state": [
+          5,
+          3
+        ],
+        "move": "MOVE:S",
+        "intent": "truth",
+        "hint": "Chinatown is behind me now, going south."
+      },
+      "nonce": "e591c314610fd90531f7d162093b1f66",
+      "commit": "fdbfaaf1a2f7e9ffbcd3ef17a016ccf9cfcc4059e2c714a03111df7c497e80c9"
+    },
+    {
+      "payload": {
+        "step": 3,
+        "role": "THIEF",
+        "state": [
+          6,
+          3
+        ],
+        "move": "MOVE:S",
+        "intent": "truth",
+        "hint": "Times Square is behind me now, going south."
+      },
+      "nonce": "23458cd5253a4974dda20755933798ed",
+      "commit": "b30e01bc9fbc35338da0d9bc416ab2c712c892b6dfc36a8f214048bf574c0e3d"
+    },
+    {
+      "payload": {
+        "step": 4,
+        "role": "THIEF",
+        "state": [
+          6,
+          4
+        ],
+        "move": "MOVE:E",
+        "intent": "truth",
+        "hint": "Heading east, near Harlem. Catch me if you can."
+      },
+      "nonce": "19d1677d4eb479a2f53ecd94cdac2428",
+      "commit": "88f086dcb678211d7ae004f356c59dec635834a6e739039dcfe98f4dc8c81dc5"
+    },
+    {
+      "payload": {
+        "step": 5,
+        "role": "THIEF",
+        "state": [
+          6,
+          5
+        ],
+        "move": "MOVE:E",
+        "intent": "truth",
+        "hint": "Queens is behind me now, going east."
+      },
+      "nonce": "1e30c663a7cfe5ddbec0f6343006aad3",
+      "commit": "313d9617bcde547c88187175913764ba23b5153a40048a4a0f18dd178483d8dc"
+    },
+    {
+      "payload": {
+        "step": 6,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:E",
+        "intent": "truth",
+        "hint": "Moving east past the Bowery. Still breathing."
+      },
+      "nonce": "0f2dec241d60a4b90ab4ab9d585d1135",
+      "commit": "d1d3a5bf901c1dcb3114c1a1a4b411f26ef8399a0c7c7df035e1f379d9bd6e7c"
+    },
+    {
+      "payload": {
+        "step": 7,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Chinatown is behind me now, going nowhere."
+      },
+      "nonce": "25ea2ffb4e46fe24dbf4d46bab830d89",
+      "commit": "a9d2b622d7bb75adb05ceed6384291ec242adf7a9bd71e284736e23ec19dd4ed"
+    },
+    {
+      "payload": {
+        "step": 8,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Honest one: nowhere, by Harlem."
+      },
+      "nonce": "0e9694a8bda890c74a7acee05aa748fb",
+      "commit": "44c964d4d2176eb3ec91c1c3e6b41aa3245e4f47ecd849b52cbcd4ce0f5313ef"
+    },
+    {
+      "payload": {
+        "step": 9,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "the Bowery is behind me now, going nowhere."
+      },
+      "nonce": "57fe13ca2b3a9d9ff0d5663883aa1a03",
+      "commit": "a9e325dc669416f2ddd5c9093d1fc5c586a4aa301d773f8bf0b9ffda818a9d7b"
+    },
+    {
+      "payload": {
+        "step": 10,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Honest one: nowhere, by the East River."
+      },
+      "nonce": "a46a2e4671b84f8edadc585471f2b257",
+      "commit": "bc65117f7136d1d99926dad1db6f70ae027a717767adb9ca07ece702b9f759fb"
+    },
+    {
+      "payload": {
+        "step": 11,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "lie",
+        "hint": "Resting by the Bronx. Not moving nowhere at all."
+      },
+      "nonce": "9b53e633228cde24304396ee8fde02d5",
+      "commit": "613d3d6880f9e72f97dde8fa75a4bedf970855d57d8fcd7f48de08d44165d1c2"
+    },
+    {
+      "payload": {
+        "step": 12,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Heading nowhere, near Wall Street. Catch me if you can."
+      },
+      "nonce": "130ac35fec5a1599a8d0e1c8d3515082",
+      "commit": "6c25a02d6c02e319c89ef2b4f7a8dbf3dd92ea99fd9d7b6950d06c1ecc8c2a96"
+    },
+    {
+      "payload": {
+        "step": 13,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "lie",
+        "hint": "Try Queens, I am done running nowhere."
+      },
+      "nonce": "2dcb10f815ba8e4c9cfc70ebabda927d",
+      "commit": "6494066ce6e9131ed0317b2feb0f09574d54b445891c89a462c56218d76a03a9"
+    },
+    {
+      "payload": {
+        "step": 14,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Brooklyn Bridge is behind me now, going nowhere."
+      },
+      "nonce": "15a41c879f370c9f99c1b5ac307a7dca",
+      "commit": "e04501f56a4a5f0e7c183f2f1f3106ac18547e6885a7a2501daf69f15f8bdc45"
+    },
+    {
+      "payload": {
+        "step": 15,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Heading nowhere, near Harlem. Catch me if you can."
+      },
+      "nonce": "0c9581da3e2dc8937827ea83d0030b39",
+      "commit": "7420f96037d636691030a8ea65e2f421ac05b97676f9d73faee92906d2c0322f"
+    },
+    {
+      "payload": {
+        "step": 16,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Moving nowhere past Brooklyn Bridge. Still breathing."
+      },
+      "nonce": "be1ca9a77c4a97355c9c947e80cb3db3",
+      "commit": "2ed5c2745520b92091bb3b25fcd5edc94a21d3b21b245165d68408d41f988a9a"
+    },
+    {
+      "payload": {
+        "step": 17,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Heading nowhere, near Central Park. Catch me if you can."
+      },
+      "nonce": "a454578b14c4ae49d32aaea421638bf3",
+      "commit": "adc39df652075523892f9ed25bb7d59ef78fb0a3c289757c061c03b141e47dd6"
+    },
+    {
+      "payload": {
+        "step": 18,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Heading nowhere, near the Bronx. Catch me if you can."
+      },
+      "nonce": "e4e61f08b49345567b2b5d66aa37a3fd",
+      "commit": "c241569caa77b531a13d70f9b5fa3e1e2790b5b31f2be208d5a49691e4b259eb"
+    },
+    {
+      "payload": {
+        "step": 19,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Harlem is behind me now, going nowhere."
+      },
+      "nonce": "f163c038214d8bf42e34f8940cd46429",
+      "commit": "fce2658107e4af03a4edbe2905ea0461800a80c31dd9b179ff88249e462c7b2c"
+    },
+    {
+      "payload": {
+        "step": 20,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Queens is behind me now, going nowhere."
+      },
+      "nonce": "2a969c5b136137be37c562731c4c965e",
+      "commit": "beefcd38ef7aca21be27fe9908072fa169da2e14d08ac70add8aeb8b4c5f3ec3"
+    },
+    {
+      "payload": {
+        "step": 21,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Grand Central is behind me now, going nowhere."
+      },
+      "nonce": "2bb9ea05a68719720f26931be676a1d2",
+      "commit": "6e7da9aa9ecc26465c73829dd40713ce13a2774e21bbf2a52b170216660432aa"
+    },
+    {
+      "payload": {
+        "step": 22,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Honest one: nowhere, by the Bronx."
+      },
+      "nonce": "edc4cf2d200462ae683847cd9b05ed47",
+      "commit": "c89e985439694362ae80ee64018efef1c686c4b9a2df6b6979aba4b30eef79a8"
+    },
+    {
+      "payload": {
+        "step": 23,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Brooklyn Bridge is behind me now, going nowhere."
+      },
+      "nonce": "2c51757eaa80772ab0edc4ac0a90a4b6",
+      "commit": "e26603116133d4ac5a0353bc26cdf1e2bccd88f1b847e89b4599797c5fcc046e"
+    },
+    {
+      "payload": {
+        "step": 24,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Heading nowhere, near Harlem. Catch me if you can."
+      },
+      "nonce": "016e93206e99c37273855641fd670edf",
+      "commit": "7af88d89a810f2d83643c520020598fd60194813e0bec2841b0a28fcd71f2c36"
+    },
+    {
+      "payload": {
+        "step": 25,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Moving nowhere past Central Park. Still breathing."
+      },
+      "nonce": "4d87eadc9dd22f5c97901797b5cb6017",
+      "commit": "650b77dd5ed839f716581fc96e7582ed03424452a398db475b3a93f58b9ddc33"
+    },
+    {
+      "payload": {
+        "step": 26,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Heading nowhere, near Grand Central. Catch me if you can."
+      },
+      "nonce": "bda1cd2c294caf9ff62feec09e0bd6cb",
+      "commit": "47d36a82b972c5b5504a5aed29b076d47b29b545929d382577d5eb2222aa440b"
+    },
+    {
+      "payload": {
+        "step": 27,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Honest one: nowhere, by Central Park."
+      },
+      "nonce": "640dd3c8a89e7dea867e84eed00cff1f",
+      "commit": "953ba1d636523348ba30ff0577bb5906cd357e25d61b3d397627675963c41e03"
+    },
+    {
+      "payload": {
+        "step": 28,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Heading nowhere, near Coney Island. Catch me if you can."
+      },
+      "nonce": "f802e0a54a70eff06a86641eaa5e7248",
+      "commit": "787f2a912911104302c9c30314d05af0ec134e2ab9cba46360e45132fc69c793"
+    },
+    {
+      "payload": {
+        "step": 29,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Honest one: nowhere, by the East River."
+      },
+      "nonce": "c7f302d5c53240866dae2c5d8d247b0e",
+      "commit": "6b453c7a928ef3694c21eb5ba7bd466bf962083dfe2661cf8f93fa4d069268d3"
+    },
+    {
+      "payload": {
+        "step": 30,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Honest one: nowhere, by the Bowery."
+      },
+      "nonce": "e6fe128e3533b7ee179fa4ef01eca041",
+      "commit": "2aa369016b657ff3cc521f58d31cbd008e3de0c500c3ef0949dcb9d5665d0a63"
+    },
+    {
+      "payload": {
+        "step": 31,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Honest one: nowhere, by Queens."
+      },
+      "nonce": "dff12a73dedb1d8958a61d7baf442e6c",
+      "commit": "cd86d15d150777a61ae66c0a97952d7704ea0ed84f98583e021e679be42bb457"
+    },
+    {
+      "payload": {
+        "step": 32,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Moving nowhere past Central Park. Still breathing."
+      },
+      "nonce": "cc750460b23c9d001281ec4580538f6c",
+      "commit": "088cf754fb4c9af562b86ef8fc6d5034cef01a4d2754b0a4c5d5f3ce2cc89882"
+    },
+    {
+      "payload": {
+        "step": 33,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Moving nowhere past the East River. Still breathing."
+      },
+      "nonce": "f6b913d4514396ac87f2119b718ed432",
+      "commit": "ac4302900d6e774f8aa27b77ce3224d85b15236f54c2010643bb19840b8fbc9e"
+    },
+    {
+      "payload": {
+        "step": 34,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Heading nowhere, near Chinatown. Catch me if you can."
+      },
+      "nonce": "d47579968423d0d433c4c5ce1e7611fb",
+      "commit": "fbbedc64ab687097d497a80067c0c722d9c4e96727763a0a1e21e8c52259973c"
+    },
+    {
+      "payload": {
+        "step": 35,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Honest one: nowhere, by the East River."
+      },
+      "nonce": "27b3c483fd84bb71e46c7c4654893e61",
+      "commit": "d93902e99b016120ccc31a29501b0d3fd4c858c47adbfe3704c508b97d531ed2"
+    },
+    {
+      "payload": {
+        "step": 36,
+        "role": "THIEF",
+        "state": [
+          6,
+          6
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Sub-game closed. Standing still."
+      },
+      "nonce": "43459b17f43086afeb12a9b5fa45b0dc",
+      "commit": "c0bc9201f7a9824d2b1547a4717ca1f9a7f2fa39f7828b409e536ae618070b5a"
+    }
+  ],
+  "mutual_agreement": {
+    "opponent_group_id": "imreeyal",
+    "sha256": "",
+    "confirmed": false
+  }
+}
