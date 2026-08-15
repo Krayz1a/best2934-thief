@@ -1,0 +1,381 @@
+{
+  "_schema": "Summary and final result for the WHOLE game (all sub-games) between two teams: per-sub-game scores and the aggregate outcome used to build the league standings. Both teams must agree on this result and each sends its own copy to the lecturer (book ch9).",
+  "schema_version": "1.1",
+  "report_type": "final_game_result",
+  "game_id": "best2934-vs-gal-roy1",
+  "game_uid": "83b221e5-03e6-8775-645b-3bb311f6cbc8",
+  "links": {
+    "_remark": "Logical roles, NOT fixed filenames. Match-level files (declaration, result) are named <role>_<game_id>.json; per-sub-game files (config, log) are named <role>_<game_id>_g<NN>.json.",
+    "declaration": "declaration_best2934-vs-gal-roy1.json",
+    "config": "config_best2934-vs-gal-roy1_g<NN>.json",
+    "log": "log_best2934-vs-gal-roy1_g<NN>.json",
+    "result": "result_best2934-vs-gal-roy1.json",
+    "github": {
+      "best2934": {
+        "cop": "https://github.com/Krayz1a/best2934-cop",
+        "thief": "https://github.com/Krayz1a/best2934-thief"
+      },
+      "gal-roy1": {}
+    }
+  },
+  "timezone": "Asia/Jerusalem",
+  "groups": [
+    "best2934",
+    "gal-roy1"
+  ],
+  "num_sub_games": 11,
+  "sub_games": [
+    {
+      "sub_game_number": 0,
+      "roles": {
+        "best2934": "thief",
+        "gal-roy1": "police"
+      },
+      "started_at": "2026-08-15T20:42:58.373913+00:00",
+      "ended_at": "2026-08-15T20:43:44.311384+00:00",
+      "result": "capture",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 20
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g07.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 1,
+      "roles": {
+        "best2934": "police",
+        "gal-roy1": "thief"
+      },
+      "started_at": "2026-08-15T17:20:30.393460+00:00",
+      "ended_at": "2026-08-15T17:20:30.393477+00:00",
+      "result": "survival",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 10
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g01.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 2,
+      "roles": {
+        "best2934": "police",
+        "gal-roy1": "thief"
+      },
+      "started_at": "2026-08-15T20:02:15.782844+00:00",
+      "ended_at": "2026-08-15T20:02:15.782857+00:00",
+      "result": "survival",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 10
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g02.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 3,
+      "roles": {
+        "best2934": "police",
+        "gal-roy1": "thief"
+      },
+      "started_at": "2026-08-15T20:02:22.645042+00:00",
+      "ended_at": "2026-08-15T20:03:36.598528+00:00",
+      "result": "survival",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 10
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g03.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 4,
+      "roles": {
+        "best2934": "police",
+        "gal-roy1": "thief"
+      },
+      "started_at": "2026-08-15T20:03:43.273822+00:00",
+      "ended_at": "2026-08-15T20:04:57.305975+00:00",
+      "result": "survival",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 10
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g04.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 6,
+      "roles": {
+        "best2934": "thief",
+        "gal-roy1": "police"
+      },
+      "started_at": "2026-08-15T20:59:52.027743+00:00",
+      "ended_at": "2026-08-15T20:59:52.027757+00:00",
+      "result": "capture",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 20
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g01.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 7,
+      "roles": {
+        "best2934": "thief",
+        "gal-roy1": "police"
+      },
+      "started_at": "2026-08-15T20:59:52.041856+00:00",
+      "ended_at": "2026-08-15T21:00:41.859288+00:00",
+      "result": "capture",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 20
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g02.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 8,
+      "roles": {
+        "best2934": "thief",
+        "gal-roy1": "police"
+      },
+      "started_at": "2026-08-15T20:39:15.902108+00:00",
+      "ended_at": "2026-08-15T20:40:02.066033+00:00",
+      "result": "capture",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 20
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g03.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 9,
+      "roles": {
+        "best2934": "thief",
+        "gal-roy1": "police"
+      },
+      "started_at": "2026-08-15T20:40:11.454045+00:00",
+      "ended_at": "2026-08-15T20:40:57.494022+00:00",
+      "result": "capture",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 20
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g04.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 10,
+      "roles": {
+        "best2934": "thief",
+        "gal-roy1": "police"
+      },
+      "started_at": "2026-08-15T20:41:07.241903+00:00",
+      "ended_at": "2026-08-15T20:41:53.517727+00:00",
+      "result": "capture",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 20
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g05.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    },
+    {
+      "sub_game_number": 11,
+      "roles": {
+        "best2934": "thief",
+        "gal-roy1": "police"
+      },
+      "started_at": "2026-08-15T20:42:02.838606+00:00",
+      "ended_at": "2026-08-15T20:42:48.730312+00:00",
+      "result": "capture",
+      "winner_group": "gal-roy1",
+      "tie": false,
+      "github_commit": {
+        "best2934": "16b91c44b31c05923388d60f704a1f6838ef6be0"
+      },
+      "tokens": {
+        "best2934": 0
+      },
+      "score": {
+        "best2934": 5,
+        "gal-roy1": 20
+      },
+      "log_files": {
+        "best2934": "log_best2934-vs-gal-roy1_g06.json"
+      },
+      "audit": {
+        "log_verified": false,
+        "tampered": false
+      }
+    }
+  ],
+  "final_result": {
+    "total_score": {
+      "best2934": 55,
+      "gal-roy1": 180
+    },
+    "sub_games_won": {
+      "best2934": 0,
+      "gal-roy1": 11
+    },
+    "ties": 0,
+    "winner_group": "gal-roy1",
+    "series_tie": false,
+    "tokens_total_series": {
+      "best2934": 0,
+      "gal-roy1": 0
+    },
+    "games_played_including_this": {
+      "best2934": 1,
+      "gal-roy1": 0
+    },
+    "first_meeting_between_groups": true,
+    "diversity_reward_applied": {
+      "best2934": false,
+      "gal-roy1": false
+    }
+  },
+  "mutual_agreement": {
+    "sha256": "51118da10c9d85c8a9ab05196e964e22af4751ad2ed4dae3f432618e1594c33a",
+    "scope": "agreed_summary: game_id, sorted group_ids, per sub-game roles/result/winner/tie/scores, and derived totals",
+    "interop_sha256": "1fae4d1dadec5a65c0b9e0400e26e3d677122474113cd9e29d7520939c2738cb",
+    "interop_scope": "league trimmed scope -- game_id, derived aggregate, and the five-key per sub-game row (sub_game_number, roles, result, winner_group, score); spaced canonical form (copthief-league-protocol SPEC section 6)",
+    "confirmed": false
+  }
+}
