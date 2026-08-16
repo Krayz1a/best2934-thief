@@ -1,0 +1,11 @@
+{
+  "_schema": "Receipt for the automatic counted-series report (rule 32). Its presence prevents a second send.",
+  "game_id": "best2934-vs-gal-roy1",
+  "opponent": "gal-roy1",
+  "sent": false,
+  "recipient": "rmisegal+uoh26finalgame@gmail.com",
+  "subject": "[UOH26 Final Game] best2934-vs-gal-roy1 — best2934 result report",
+  "attachment": "result_best2934-vs-gal-roy1.json",
+  "message_id": "",
+  "reason": "RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})"
+}
