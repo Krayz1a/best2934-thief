@@ -1,6 +1,6 @@
 # Compliance matrix — Appendix E, all 55 mandatory rules
 
-**Project** `best2934-cop` · **Booklet** v3.0.0, Appendix E (Tables 7–12) ·
+**Project** `best2934-thief` · **Booklet** v3.0.0, Appendix E (Tables 7–12) ·
 **Version** 1.00 · **Last checked** 2026-08-05
 
 Appendix E is the booklet's own checklist: five thematic tables plus the
