@@ -1,11 +1,17 @@
 {
-  "_schema": "Receipt for the automatic counted-series report (rule 32). Its presence prevents a second send.",
+  "_schema": "Receipt for the counted-series report (rule 32). NOTE: `already_fired` tests only that this FILE EXISTS, not that `sent` is true -- so a failed attempt writes a receipt that suppresses every later automatic retry. Both reports below were finally delivered by hand on 2026-08-18; read `sent`, never the filename or the directory name.",
   "game_id": "best2934-vs-gal-roy1",
   "opponent": "gal-roy1",
-  "sent": false,
+  "sent": true,
   "recipient": "rmisegal+uoh26finalgame@gmail.com",
   "subject": "[UOH26 Final Game] best2934-vs-gal-roy1 — best2934 result report",
   "attachment": "result_best2934-vs-gal-roy1.json",
-  "message_id": "",
-  "reason": "RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})"
+  "message_id": "1a01536f9ac9f65a",
+  "reason": "",
+  "previous_attempt": {
+    "utc": "2026-08-16",
+    "sent": false,
+    "reason": "RefreshError: ('invalid_grant: Bad Request', ...)"
+  },
+  "delivered_utc": "2026-08-18T14:12:00Z"
 }

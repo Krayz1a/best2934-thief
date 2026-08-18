@@ -1,11 +1,17 @@
 {
-  "_schema": "Receipt for the automatic counted-series report (rule 32). Its presence prevents a second send.",
+  "_schema": "Receipt for the counted-series report (rule 32). NOTE: `already_fired` tests only that this FILE EXISTS, not that `sent` is true -- so a failed attempt writes a receipt that suppresses every later automatic retry. Both reports below were finally delivered by hand on 2026-08-18; read `sent`, never the filename or the directory name.",
   "game_id": "best2934-vs-imreeyal",
   "opponent": "imreeyal",
-  "sent": false,
+  "sent": true,
   "recipient": "rmisegal+uoh26finalgame@gmail.com",
   "subject": "Police-Thief series result: winner tie (reported by thief)",
   "attachment": "result_best2934-vs-imreeyal.json",
-  "message_id": "",
-  "reason": "ModuleNotFoundError: No module named 'googleapiclient'"
+  "message_id": "1a01536b3b25b04c",
+  "reason": "",
+  "previous_attempt": {
+    "utc": "2026-08-15",
+    "sent": false,
+    "reason": "ModuleNotFoundError: No module named 'googleapiclient'"
+  },
+  "delivered_utc": "2026-08-18T14:11:41Z"
 }
