@@ -1,0 +1,246 @@
+{
+  "_schema": "Per-sub-game match log consumed by the Replay Viewer for cryptographic verification: commit/reveal records, moves, hints, nonces and hashes.",
+  "schema_version": "1.1",
+  "game_id": "anrbj666-vs-best2934",
+  "game_uid": "c82e9a5f-8800-85da-eea6-2b57b4fab4f6",
+  "links": {
+    "_remark": "Logical roles, NOT fixed filenames. Match-level files (declaration, result) are named <role>_<game_id>.json; per-sub-game files (config, log) are named <role>_<game_id>_g<NN>.json.",
+    "declaration": "declaration_anrbj666-vs-best2934.json",
+    "config": "config_anrbj666-vs-best2934_g<NN>.json",
+    "log": "log_anrbj666-vs-best2934_g<NN>.json",
+    "result": "result_anrbj666-vs-best2934.json"
+  },
+  "summary": {
+    "sub_game_number": 5,
+    "group_id": "best2934",
+    "role": "thief",
+    "opponent_group_id": "anrbj666",
+    "github_commit": "1ac172e227da613fbc36f8da0f9e77b120ab4080",
+    "result": "capture",
+    "winner_role": "police",
+    "steps": 10,
+    "timezone": "Asia/Jerusalem",
+    "started_at": "2026-08-20T19:47:18.779051+00:00",
+    "ended_at": "2026-08-20T19:47:27.429326+00:00",
+    "duration_seconds": 8.7,
+    "tokens_total": 0,
+    "audit": {
+      "passed": true,
+      "verified_steps": 11,
+      "failed_steps": [],
+      "forged_steps": [],
+      "withheld_steps": [],
+      "unsolicited_steps": []
+    }
+  },
+  "records": [
+    {
+      "payload": {
+        "step": 0,
+        "type": "system_spec",
+        "spec": {
+          "os": "Linux 7.0.0-29-generic",
+          "cpu_type": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+          "cpu_cores": 8,
+          "cpu_freq_mhz": 4200,
+          "ram_gb": 6.7,
+          "gpu_type": "none (CPU only)",
+          "gpu_cores_or_cuda": "n/a",
+          "vram_gb": 0.0
+        },
+        "model": "claude-haiku-4-5",
+        "code_version": "1.0.0",
+        "group_name": "best2934",
+        "group_id": "best2934",
+        "role": "thief",
+        "sub_game_number": 5,
+        "github_commit": "1ac172e227da613fbc36f8da0f9e77b120ab4080",
+        "signature": "21c0fe37b8b8552d8b93ec0f2cca24641771d60172f5023bca63f1cd1fdd2a91"
+      },
+      "nonce": "ed2129721b232dba12d5cee452e56572",
+      "commit": "aeeb54913cea90b79b7da458b4bdc6affed97e6cf175d6939872647eb53e0859",
+      "step": 0
+    },
+    {
+      "payload": {
+        "step": 1,
+        "role": "THIEF",
+        "state": [
+          4,
+          3
+        ],
+        "move": "MOVE:S",
+        "intent": "truth",
+        "hint": "Chinatown is behind me now, going south."
+      },
+      "nonce": "a0a562e2556e355909ba6d059ba92931",
+      "commit": "0758ac2417e981128b84ad0f39fe1fd665d37ece2489c01940cc1ec392ee3443",
+      "step": 1
+    },
+    {
+      "payload": {
+        "step": 2,
+        "role": "THIEF",
+        "state": [
+          5,
+          3
+        ],
+        "move": "MOVE:S",
+        "intent": "truth",
+        "hint": "Chinatown is behind me now, going south."
+      },
+      "nonce": "7555e5592e7260664bbba1b981018eea",
+      "commit": "07c695a07ecfa0ace21b72539c80c46e73e928b99ccb7bd6cd79df63de274341",
+      "step": 2
+    },
+    {
+      "payload": {
+        "step": 3,
+        "role": "THIEF",
+        "state": [
+          6,
+          3
+        ],
+        "move": "MOVE:S",
+        "intent": "truth",
+        "hint": "Honest one: south, by Times Square."
+      },
+      "nonce": "2fceaf4b7c5f6eb01612a02c91589197",
+      "commit": "313b9b1d564d5055193e340f2fdcfeb0b2418e19eb92d26dd2231aafdaa01edf",
+      "step": 3
+    },
+    {
+      "payload": {
+        "step": 4,
+        "role": "THIEF",
+        "state": [
+          6,
+          4
+        ],
+        "move": "MOVE:E",
+        "intent": "truth",
+        "hint": "Honest one: east, by Harlem."
+      },
+      "nonce": "4f2346f53845e20d45d86cd878be0515",
+      "commit": "316a681e3c62c0ca635b4af30d9f93df78d60a56e6d2ecc2c1c26384951517be",
+      "step": 4
+    },
+    {
+      "payload": {
+        "step": 5,
+        "role": "THIEF",
+        "state": [
+          6,
+          5
+        ],
+        "move": "MOVE:E",
+        "intent": "truth",
+        "hint": "Queens is behind me now, going east."
+      },
+      "nonce": "3832aebdb5d739209af98a70f8d629c8",
+      "commit": "9a1577ddfa0275f0de3aa7be1140b2e53e9f18d4fbb3ffab539aa29a73a2d0bf",
+      "step": 5
+    },
+    {
+      "payload": {
+        "step": 6,
+        "role": "THIEF",
+        "state": [
+          5,
+          5
+        ],
+        "move": "MOVE:N",
+        "intent": "truth",
+        "hint": "Honest one: north, by the Bowery."
+      },
+      "nonce": "3a99edbb8d65a47002ad1a958aa17634",
+      "commit": "16c0968c214450077196ae7cb4d8fbb0977e4f75bfde44567cec5344ce8ce1fa",
+      "step": 6
+    },
+    {
+      "payload": {
+        "step": 7,
+        "role": "THIEF",
+        "state": [
+          5,
+          6
+        ],
+        "move": "MOVE:E",
+        "intent": "truth",
+        "hint": "Chinatown is behind me now, going east."
+      },
+      "nonce": "535eb575239edb08b9c683f2430b7eab",
+      "commit": "1af685cadacfd42f20f8ae712b691e95563a041feac38452b839d5a0c79bd242",
+      "step": 7
+    },
+    {
+      "payload": {
+        "step": 8,
+        "role": "THIEF",
+        "state": [
+          4,
+          6
+        ],
+        "move": "MOVE:N",
+        "intent": "truth",
+        "hint": "Honest one: north, by Harlem."
+      },
+      "nonce": "663ab47c46a3e1803b424a3e2be9da23",
+      "commit": "dd67e9ea724626343a439f298cbc36fe07a834b0fcd2e81e6cd114255147957c",
+      "step": 8
+    },
+    {
+      "payload": {
+        "step": 9,
+        "role": "THIEF",
+        "state": [
+          5,
+          6
+        ],
+        "move": "MOVE:S",
+        "intent": "truth",
+        "hint": "the Bowery is behind me now, going south."
+      },
+      "nonce": "474c7e8e0450d76fac77660bf83a9afe",
+      "commit": "db27b791689ac74192086b36803456c3aba7e7b6b4fae24179259c0874002128",
+      "step": 9
+    },
+    {
+      "payload": {
+        "step": 10,
+        "role": "THIEF",
+        "state": [
+          5,
+          5
+        ],
+        "move": "MOVE:W",
+        "intent": "truth",
+        "hint": "the East River is behind me now, going west."
+      },
+      "nonce": "d20a68a7f309cae4b8d34b74e83cbea1",
+      "commit": "01b0b7c6a67adec1b147160a852137bce3450d3b83c78fc05cbbf6da390ac1b0",
+      "step": 10
+    },
+    {
+      "payload": {
+        "step": 11,
+        "role": "THIEF",
+        "state": [
+          5,
+          5
+        ],
+        "move": "MOVE:STAY",
+        "intent": "truth",
+        "hint": "Caught. Standing still and closing out the sub-game."
+      },
+      "nonce": "fc1df07b20b87fd5e27132b1c6dea443",
+      "commit": "1f59eefec21d47ab90cd100345990af0d60d21216abbe7f0f4aaff09e055aaf8",
+      "step": 11
+    }
+  ],
+  "mutual_agreement": {
+    "opponent_group_id": "anrbj666",
+    "sha256": "",
+    "confirmed": false
+  }
+}
